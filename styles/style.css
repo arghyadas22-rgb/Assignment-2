@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1A0B2E;
+    /* background-color: #1A0B2E; */
 }
 
 /* header section */
@@ -21,6 +21,7 @@
     padding-right: 200px;
     padding-left: 200px;
     height: 92px;
+    background-color: #1A0B2E;
 }
 
 .nav-head h1{
@@ -77,8 +78,129 @@
 
 /* main section */
 
-.aaaa{
+
+
+
+
+
+
+
+
+/* About-section */
+
+.about-dexcription{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+
+.about-dexcription h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about-dexcription p{
+    font-size: 1rem;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.322);
+}
+
+.stats{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #1A0B2E;
+
+}
+.stats-box h2{
+    font-size: 3rem;
+    color: #00FF88;
+}
+.stats-box p{
+    font: 1rem;
+    color: #FFFFFF;
+    line-height: 20px;
+    font-style: initial;
+}
+
+/* chose-container */
+
+
+.chose-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 120px;
+}
+.chose-container h1{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.chose-container p{
+    font-size: 1rem;
+    color: #ffffffbe;
+    line-height: 24px;
+}
+.chose-container .header{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 40px;
+
+}
+.grid-section{
+    /* background-color: #351165; */
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+}
+.Choose-card-1{
+    background-color: #351165;
+    padding: 120px 40px;
+    border-radius: 30px;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.Choose-card-2{
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.Choose-card-3{
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.Choose-card-4{
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 30px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.Choose-card-5{
+    background-color: #351165;
+    padding: 40px;
+    border-radius: 30px;
+    grid-column: span 1;
+    grid-row: span 1;
 }
