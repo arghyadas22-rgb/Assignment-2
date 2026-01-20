@@ -161,17 +161,17 @@
 }
 
 /* smooth animation */
-@keyframes floatBtn {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-8px);
-    }
-    100%{
-        transform: translateY(0);
-    }
 
+@keyframes floatBtn {
+    0% {
+        transform: translateY(0);  
+    }
+    50% {
+        transform: translateY(-8px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
 }
 
 
