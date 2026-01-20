@@ -38,7 +38,6 @@
     color: transparent;
     font-weight: 700;
     font-size: 2.5rem;
-    display: inline-block;
 }
 
 .nav-manu ul{
@@ -59,6 +58,11 @@
     font-size: 1rem;
     
 }
+.manu-hamber{
+    display: none;
+}
+
+
 
 /* button */
 
@@ -133,6 +137,55 @@
     box-shadow: 0 0 15px 5px rgba(0, 255, 136, 0.6);
     border: none;
 }
+.banner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-title h1{
+    font-size: 3.75rem;
+    color: #FFFFFF;
+    font-weight: 800;
+    padding-bottom: 8px;
+}
+.banner-title p{
+    font-size: 1rem;
+    color: #ffffffbd;
+}
+
+.banner-btn{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+
+.banner-btn-1{
+    /* border: 1px solid red; */
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.banner-btn-2{
+    border: 2px solid #00FF88;
+    padding: 12px 20px;
+    background-color: #1A0B2E;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #00FF88;
+    /* margin-right: 10px; */
+}
+
+
+
+
 
 
 
@@ -162,6 +215,7 @@
     line-height: 20px;
     color: #FFFFFF;
     text-align: center;
+    padding-top: 16px;
     padding-bottom: 50px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.322);
 }
@@ -223,7 +277,7 @@
     grid-template-rows: repeat(3 , 1fr);
 }
 .Choose-card-1{
-    background-color: #351165;
+    background-color: #3c1372;
     padding: 120px 40px;
     border-radius: 30px;
     grid-column: span 1;
@@ -231,14 +285,14 @@
 }
 
 .Choose-card-2{
-    background-color: #351165;
+    background-color: #3c1372;
     padding: 40px;
     border-radius: 30px;
     grid-column: span 2;
     grid-row: span 1;
 }
 .Choose-card-3{
-    background-color: #351165;
+    background-color: #3c1372;
     padding: 40px;
     border-radius: 30px;
     grid-column: span 2;
@@ -246,14 +300,14 @@
 }
 
 .Choose-card-4{
-    background-color: #351165;
+    background-color: #3c1372;
     padding: 40px;
     border-radius: 30px;
     grid-column: span 2;
     grid-row: span 1;
 }
 .Choose-card-5{
-    background-color: #351165;
+    background-color: #3c1372;
     padding: 40px;
     border-radius: 30px;
     grid-column: span 1;
@@ -329,6 +383,7 @@
     width: 13px;
     height: 13px;
 }
+/* our-host */
 
 .episode-head-2{
     text-align: center;
@@ -349,6 +404,8 @@
     background-color: #351165;
     gap: 10px;
     border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 
 }
 .our-host img{
@@ -358,6 +415,7 @@
     /* padding: 40px 48px; */
 }
 .host-description h2{
+
     color: #FFFFFF;
     font-size: 2rem;
     font-weight: 700;
@@ -370,13 +428,256 @@
     padding-bottom: 16px;
 
 }
-.host-description i{
+.host-description i{ 
     font-size: 22px;
     margin-right: 12px;
     cursor: pointer;
     background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
 
     -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
-    display: inline-block;
+}
+
+/* footer section */
+
+.footer-section{
+    background-image: url(../assets/footer-bg.png);
+    max-width: 1600px;
+    width: 100%;
+    height: 412px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.footer-title h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 4rem;
+;
+}
+
+.footer-title h1 span{
+    background: linear-gradient(90deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 4rem;
+    
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+    gap: 50px;
+}
+.footer-icon span{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.footer-icon i{
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.footer-icon img{
+    text-align: center;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.copy-right p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #FAFAFA;
+}
+
+
+
+
+/* media-quary */
+
+@media screen and (max-width:576px) {
+        .navbar{
+            padding: 0 20px;
+            justify-content: space-between;
+        }
+        .nav-manu,
+        .nav-btn {
+          display: none;
+        }
+        .manu-hamber {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 1.5rem;
+           cursor: pointer;
+           color: #fff;
+        }
+        .banner{
+            background-image: url(../assets/hero-bg.png);
+            height: 500px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 40px 10px;
+        }
+        .banner-hero{
+            width: 250px;
+            height: 250px;
+            top: 10px;
+            left: calc(50% - 125px);
+        }
+        .banner-img{
+            width: 70px;
+            height: 110px;
+            top: -180px;
+            left: calc(50% - 40px);
+        }
+        .banner-img img{
+            width: 80px;
+            height: 110;
+        }
+        .banner-new{
+            width: 60px;
+            height: 28px;
+            padding: 6px 12px;
+            top: -75%;
+            left: 50%;
+            transform: translateX(120%);
+        }
+        .banner-title h1{
+            font-size: 2rem;
+        }
+        .banner-title p {
+            font-size: 1rem;
+            text-align: center;
+        }
+        .banner-btn{
+            margin-top: 20px;
+        }
+
+        .about-dexcription{
+            padding: 60px 10px;
+        }
+        .about-dexcription h1{
+            font-size: 2rem;
+            /* padding-top: 30px; */
+        }
+        .stats{
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 40px;
+            padding: 40px 40px;
+        }
+        .stats-box{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .grid-section{
+            grid-template-columns: repeat(1 , 1fr);
+            gap: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            
+        }
+        .Choose-card-1,
+        .Choose-card-2,
+        .Choose-card-3,
+        .Choose-card-4,
+        .Choose-card-5{
+             grid-column: span 1;
+             grid-row: auto;
+             padding: 20px;
+        }
+        .chose-container .header {
+            font-size: 2rem;
+            padding-bottom: 20px;
+        }
+
+        .episode-head{
+            font-size: 2rem;
+        }
+
+        .episodes-section{
+            display: grid;
+            grid-template-columns: repeat(1 ,1fr);
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .episode-vedio iframe{
+            max-width: 100%;
+        }
+
+        .host-container{
+            padding: 20px;
+        }
+
+        .episode-head-2{
+            font-size: 2rem;
+            padding-top: 60px;
+            padding-bottom: 24px;
+        }
+
+        .our-host{
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding: 20px 16px;
+        }
+        .host-description h2{
+            font-size: 1.5rem;
+        }
+
+        .host-description p{
+             font-size: 1rem;
+             line-height: 22px;
+        }
+
+        /* footer */
+        .footer-section{
+             height: auto;
+             padding: 40px 16px;
+             text-align: center;
+        }
+        
+        .footer-title{
+             padding-top: 50px;
+        }
+        .footer-title h1,
+        .footer-title h1 span{
+            font-size: 2.5rem;
+        }
+        .footer-icon{
+             display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             gap: 18px;
+             padding-top: 30px;
+             justify-items: center;
+             align-items: center;
+        }
+         .footer-icon span{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             gap: 8px;
+             font-size: 1rem;
+    }
 }
