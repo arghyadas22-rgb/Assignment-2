@@ -160,6 +160,20 @@
     
 }
 
+/* smooth animation */
+@keyframes floatBtn {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
 
 .banner-btn-1{
     /* border: 1px solid red; */
@@ -171,7 +185,16 @@
     font-size: 1rem;
     color: #FFFFFF;
     margin-right: 10px;
+
+    animation: floatBtn 2.5s ease-in-out infinite;
 }
+/* hover paused */
+
+.banner-btn-1:hover {
+  animation-play-state: paused;
+}
+
+
 .banner-btn-2{
     border: 2px solid #00FF88;
     padding: 12px 20px;
@@ -654,7 +677,9 @@
         /* footer */
         .footer-section{
              height: auto;
-             padding: 40px 16px;
+             padding-right: 20px;
+             padding-bottom: 30px;
+             /* padding: 10px 16px; */
              text-align: center;
         }
         
@@ -668,7 +693,7 @@
         .footer-icon{
              display: grid;
              grid-template-columns: repeat(2, 1fr);
-             gap: 18px;
+             gap: 15px;
              padding-top: 30px;
              justify-items: center;
              align-items: center;
